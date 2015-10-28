@@ -41,13 +41,13 @@ Custom property | Description | Default
 <dom-module id="paper-fab-speed-dial">
   <template>
     <style>
-      .vertical ::content .dropdown-content {
+      :host .vertical ::content .dropdown-content {
         @apply(--layout-vertical);
       }
-      .horizontal ::content .dropdown-content {
+      :host .horizontal ::content .dropdown-content {
         @apply(--layout-horizontal);
       }
-      ::content .dropdown-content > * {
+      :host ::content .dropdown-content > * {
         margin: 8px;
         @apply(--paper-fab-speed-dial-option);
       }
