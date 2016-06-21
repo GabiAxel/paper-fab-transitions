@@ -120,6 +120,15 @@ Custom property | Description | Default
               }
             }];
           }
+        },
+        /**
+         * True if the speed-dial is open, false otherwise
+         */
+        dropdownOpened: {
+          type: Boolean,
+          notify: true,
+          reflectToAttribute: true,
+          value: false,
         }
       },
       observers: [
@@ -142,25 +151,26 @@ Custom property | Description | Default
        */
       open: function() {
         this.$.dropdown.open();
+        this.dropdownOpened = true;
       },
       /**
        * Hide the speed dial options.
        */
       close: function() {
         this.$.dropdown.close();
+        this.dropdownOpened = false;
       },
       /**
        * Toggle speed dial visibility.
        */
-       toggle: function() {
-         var el = this.$.dropdown;
-         if(el.opened) {
-           el.close();
-         }
-         else {
-           el.open();
-         }
-       }
+      toggle: function() {
+        if(this.dropdownOpened) {
+          this.close();
+        }
+        else {
+          this.open();
+        }
+      },
       _updateDropdown: function(direction, offset) {
         var d = this.$.dropdown;
         switch(direction) {
