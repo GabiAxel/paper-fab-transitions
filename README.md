@@ -1,3 +1,5 @@
+**Looking for maintainers, please contact me if you are interested.**
+
 paper-fab-transitions
 =====================
 
