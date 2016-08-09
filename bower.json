@@ -23,10 +23,10 @@
   "dependencies": {
     "polymer": "^1.1.0",
     "iron-dropdown": "PolymerElements/iron-dropdown#^1.0.0",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
     "neon-animation": "PolymerElements/neon-animation#^1.0.0"
   },
   "devDependencies": {
-    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
     "iron-component-page": "polymerelements/iron-component-page#^1.0.0",
     "test-fixture": "polymerelements/test-fixture#^1.0.0",
     "iron-test-helpers": "polymerelements/iron-test-helpers#^1.0.0",
